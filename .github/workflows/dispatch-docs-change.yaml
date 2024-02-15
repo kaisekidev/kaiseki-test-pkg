@@ -17,4 +17,4 @@ jobs:
           token: ${{ secrets.DOCS_PAT }}
           repository: kaisekidev/test-docs
           event-type: docs_changed
-          client-payload: '{"repository": "${{ github.repository }}"}'
+          client-payload: '{"repository": "${{ github.repository }}", "name": "${{ github.event.repository.name }}" }'
