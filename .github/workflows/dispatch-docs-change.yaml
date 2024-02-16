@@ -14,7 +14,7 @@ jobs:
       - name: Repository Dispatch
         uses: peter-evans/repository-dispatch@v1
         with:
-          token: ${{ secrets.DOCS_PAT }}
+          token: ${{ secrets.DISPATCH_PAT }}
           repository: kaisekidev/test-docs
           event-type: docs_changed
           client-payload: '{"repository": "${{ github.repository }}", "name": "${{ github.event.repository.name }}" }'
