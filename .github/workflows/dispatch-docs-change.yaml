@@ -4,6 +4,7 @@ on:
   push:
     branches: [ master ]
     paths:
+      - 'readme.md'
       - 'README.md'
 
 jobs:
